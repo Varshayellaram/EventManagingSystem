@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .sidebar,.sidenav{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 100%;
+            background-color: rgb(47, 45, 46);
+            position: fixed;
+            color: white;
+        }
+        .main{
+            padding: 20px;
+            position: absolute;
+            left: 300px;
+            background-color: rgb(190, 214, 239);
+            width: 160vh;
+            height: 100%;
+            color: black;
+        }
+        .title{
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-bottom: 100px;
+        }
+        .sidenav{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+        }
+        .sidenav>a{
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav>button{
+            width: 390px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+        }
+        .nav>button:hover{
+            background-color: rgb(250, 252, 252);
+            color: black;
+        }
+        .all>.upcoming,.all>.ongoing,.all>.completed{
+            border-width: 2px 2px;
+            border-color: black;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .ongoing{
+            visibility: hidden;
+        }
+        .completed{
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidenav">
+        <a href="profile.html">Profile</a><br><br>
+        <a href="main.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </div>
+        
+    </div>
+    <div class="main">
+        <header class="title">Check For Events</header>
+        <navbar class="nav">
+            <button class="future">Upcoming</button>
+            <button class="past">Completed</button>
+            <button class="now">Ongoing</button>
+        </navbar>
+
+        <div class="all">
+            <div class="upcoming">
+                <h1>These are the upcoming events for you </h1>
+                <button onclick="document.location='register.html'">Register to this</button>
+            </div>
+            <div class="ongoing" >
+                <h1>These are the ongoing events</h1>
+            </div>
+            <div class="completed">
+                <h1>These are the completed events</h1>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
