@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0px;
+            background-color: rgb(227, 206, 248);
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            background-color: rebeccapurple;
+            width: 500px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 70px;
+        }
+
+        .head{
+            font-size: 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            background-color: rebeccapurple;
+            margin-bottom: 100px;
+            color: white;
+            position: absolute;
+            top: 100px;
+        }
+
+        .rollnoText{
+            width:300px;
+            height: 40px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: rebeccapurple;
+            color: white;
+        }
+        #rollno{
+            width: 300px;
+            height: 30px;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding: 10px;
+            font-weight:900;
+            border-radius: 5px;
+        }
+        #rollsubmit{
+            color: white;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            width: 100px;
+            height: 40px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="head">Login</p>
+        <p class="rollnoText">Enter you RegId : </p>
+        <input type="text" id="rollno"><br>
+        <button id="rollsubmit" onclick="document.location='main.html'">Login</button>
+    </div>
+</body>
+</html>
